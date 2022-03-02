@@ -1,0 +1,15 @@
+# [programs.localnet]
+[programs.devnet]
+sol_program = "DYrYUD1gQ17ctSKaRVZWKHyN1TJytvUbyBQoXsYbPFBG"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+# cluster = "localnet"
+cluster = "devnet"
+wallet = "/Users/mulander/.config/solana/id.json"
+
+[scripts]
+# test = "mocha -t 1000000 tests/"
+test = "node tests/sol-program.js" 

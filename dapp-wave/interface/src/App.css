@@ -1,0 +1,262 @@
+body{
+   background: repeating-linear-gradient(-45deg, transparent, transparent 25%, rgb(41, 173, 235) 0, rgb(169, 179, 233) 50% ), repeating-linear-gradient(45deg, transparent, transparent 25%, rgb(138, 64, 21) 0, rgb(245, 204, 201) 50% ), rgb(218, 39, 107);
+    background-size: 200px 200px;
+    background-blend-mode: multiply;
+}
+.mainContainer {
+  width: 100%;
+}
+.headBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.headStat{
+  text-align: center;
+  height: 64px;
+  box-sizing: border-box;
+  background: #000;
+  padding: 10px;
+  border-radius: 0 0 0 15px;
+}
+.headStat:nth-last-child(1){
+  border-radius: 0 0 15px 0;
+}
+.headStat span{
+  display: block;
+  font-size: 20px;
+  color:white;
+}
+.headStat label{
+  display: block;
+  font-size: 10px;
+  color: #9995c3;
+  margin-top: 4px;
+}
+.logoBrand{
+  background: #000;
+  height: 64px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+.logoBrand span{
+  padding: 0 10px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(45deg, purple, violet, teal, orangered, yellow, crimson, yellowgreen, orange, darkturquoise, pink, steelblue,  turquoise, coral, skyblue,  darkviolet, gold, darkslateblue);
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  -webkit-background-clip: text;
+  animation: bioo 10s infinite ease-in;
+}
+.bio {
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  margin-top: 16px;
+  font-size: 20px;
+  padding: 12px;
+}
+.bio p{
+  position: relative;
+  z-index: 2;
+  margin: 4px 0;
+}
+.bio strong{
+  color:gold;
+}
+.bio::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(30deg, white, transparent,white);
+  background-size: 200% 200%;
+  background-position: 0 0;
+  filter: blur(10px);
+  z-index: 1;
+  animation: bioo 10s infinite ease-in;
+}
+@keyframes bioo{
+  0%,100%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+}
+.walletBox{
+  width: max-content;
+  position: fixed;
+  top: 8px;
+  right:8px;
+  z-index: 10;
+}
+.userAccount{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  border-radius: 15px;
+  padding: 0.4rem 1rem; 
+  margin: 4px 0;
+}
+.userAccount strong{
+  margin-left: 6px;
+}
+.waveButton {
+  background-image: linear-gradient( 135deg, #FAB2FF 0%, #1904E5 100%);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s;
+  outline: none;
+}
+.waveButton:hover{
+  box-shadow: 0 10px 20px 0 rgba(47,55,213,0.3);
+  background-position: right;
+  transform: scale(1.05);
+}
+.intro{
+  text-align: center;
+  color: #fff;
+}
+.mapBox{
+  background: #fefefe;
+  height:400px;
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.loading{
+  position: absolute;
+  z-index: 2;
+  background: radial-gradient(black, transparent);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  right: 0;
+    bottom: 0;
+}
+.mapMarker{
+  border-radius: 100%;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background: #444440;
+  box-shadow: inset 6px 6px 12px #232321,
+            inset -6px -6px 12px #65655f; 
+
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 6px;
+  top: 6px;
+
+  border: 5px solid #f44336;
+
+  padding: 4px;
+  cursor: pointer;
+}
+.introBottom{
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background: linear-gradient(to top, black, transparent);
+  padding-bottom: 20px;
+}
+.introBottom .waveButton{
+  width: 100%;
+}
+.stepCard{
+  background: #fff;
+  color: #fff;
+  border-radius: 25px; 
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 0 8px rgb(255 255 255 / 20%);
+}
+.stepCard:nth-child(1){
+  background: linear-gradient(75deg, #6eb4f6, transparent);
+}
+.stepCard:nth-child(2){
+  background: linear-gradient(75deg, #6ef675, transparent);
+}
+.stepCard:nth-child(3){
+  background: linear-gradient(75deg, #dee944, transparent);
+}
+.stepCard:nth-child(4){
+  background: linear-gradient(75deg, #e93630, transparent);
+}
+.stepCard::after{
+  content: attr(date-step);
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#666;
+  background: linear-gradient(
+145deg, #ffffff, #dddddd);
+    box-shadow: 20px 20px 60px #d0d0d0, -20px -20px 60px #ffffff;
+}
+.stepCard.deactive{
+  background: #000;
+}
+.stepTitle{
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.stepTip{
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  border-top: 1px solid;
+  padding-top: 4px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top:1px solid #fefefe;
+}
+footer span{
+  color: #fff;
+  margin: 1rem;
+}

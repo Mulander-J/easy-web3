@@ -1,0 +1,39 @@
+{
+  "name": "SoFest X NFT #2",
+  "symbol": "",
+  "description": "Fest NFT for Age.Web3",
+  "seller_fee_basis_points": 0,
+  "image": "2.png",
+  "attributes": [
+    {
+      "trait_type": "web",
+      "value": "yes"
+    },
+    {
+      "trait_type": "mobile",
+      "value": "yes"
+   },
+   {
+      "trait_type": "extension",
+      "value": "yes"
+    }
+  ],
+  "collection": {
+     "name": "SoFest NFT Diary",
+     "family": "SoFest DAO"
+  },
+  "properties": {
+      "files": [
+        {
+          "uri": "2.png",
+          "type": "image/png"
+        }
+      ],
+      "creators": [
+        {
+          "address": "FxVSFwwU62aU276WaVibB3fXX1mLahuRQ5KwACuD6eCs",
+          "share": 100
+        }
+      ]
+    }
+}

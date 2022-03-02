@@ -1,0 +1,28 @@
+
+.idea
+.vscode
+.DS_Store
+
+.env
+
+node_modules
+
+#Lock file
+package-lock.json
+yarn.lock
+
+
+#Hardhat files
+cache
+artifacts
+
+#Contract
+
+coverage
+coverage.json
+typechain
+
+#Build
+dist
+dist-ssr
+*.local
