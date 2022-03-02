@@ -1,4 +1,4 @@
-# Epic WEB3
+# WEB3 Starter
 
 > Author <Mulander,mulander_j@outlook.com>
 
