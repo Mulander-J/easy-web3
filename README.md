@@ -1,7 +1,5 @@
 # WEB3 Starter
 
-> Author <Mulander,mulander_j@outlook.com>
-
 MonoRepo for bunch of Web3 DApp starters.
 
 [![Ethtreum](https://img.shields.io/badge/network-ethereum-3498db.svg?)](https://ethereum.org/)
@@ -12,7 +10,19 @@ MonoRepo for bunch of Web3 DApp starters.
 
 [![thirdweb](https://img.shields.io/badge/util-thirdweb-A855F7.svg?)](https://thirdweb.com/)
 
-## Ethereum | Polygon
+## License
+
+[MIT](/LICENSE)
+
+## Tech Stack
+
+**Language:** Javascript, Typescript, Solidity, Rust, Motoko
+
+**Framework:** React, Vue, Hardhat, Anchor, DFX
+
+## Catalog
+
+### 1.Ethereum | Polygon
 
 - [DAO-THIRDWEB](/dao-thirdweb/)
 - [DAPP-WAVE](/dapp-wave/)
@@ -20,10 +30,30 @@ MonoRepo for bunch of Web3 DApp starters.
 - [NFT-GAME](/nft-game/)
 - [NFT-LOOT](/nft-loot/)
 
-## Solana
+### 2.Solana
 
 - [NFT-SOLANA](/nft-sol/)
 
-## Dfinity
+### 3.Dfinity
 
-- Dfinity-Starter
+- [Dfinity-Course](/dfinity-course/)
+
+## Related
+
+Here are some related projects
+
+- [buildspace-projects](https://github.com/buildspace/buildspace-projects)
+- [dfinity-example](https://github.com/dfinity/examples)
+- [Developer-DAO.web3-ui](https://github.com/Developer-DAO/web3-ui)
+
+## Contributing
+
+Contributions are always welcome!
+
+## Authors
+
+- [@Mulander-J](https://github.com/Mulander-J)
+
+## Feedback
+
+If you have any feedback, please reach out to us at mulander_j@outlook.com
