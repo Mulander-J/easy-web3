@@ -34,16 +34,11 @@ MonoRepo for bunch of Web3 DApp starters.
 
 - [NFT-SOLANA](/nft-sol/)
 
-### 3.Dfinity
-
-- [Dfinity-Course](/dfinity-course/)
-
 ## Related
 
 Here are some related projects
 
 - [buildspace-projects](https://github.com/buildspace/buildspace-projects)
-- [dfinity-example](https://github.com/dfinity/examples)
 - [Developer-DAO.web3-ui](https://github.com/Developer-DAO/web3-ui)
 
 ## Contributing
