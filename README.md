@@ -34,12 +34,19 @@ MonoRepo for bunch of Web3 DApp starters.
 
 - [NFT-SOLANA](/nft-sol/)
 
+### 3.Awesome Gist
+
+- [Crypto Coven](/awesome.gist/CryptoCoven.sol) | **Elegant** & **Gas Saving** `Solidy` Code | `NFT721` |
+
 ## Related
 
 Here are some related projects
 
 - [buildspace-projects](https://github.com/buildspace/buildspace-projects)
+- [pointer](https://www.pointer.gg/) | learn web3 development
+earn crypto rewards
 - [Developer-DAO.web3-ui](https://github.com/Developer-DAO/web3-ui)
+- [scaffold-eth](https://github.com/scaffold-eth/scaffold-eth) | Quickly experiment with Solidity using a frontend that adapts to your smart contract
 
 ## Contributing
 
