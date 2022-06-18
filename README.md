@@ -33,6 +33,7 @@ MonoRepo for bunch of Web3 DApp starters.
 ### 2.Solana
 
 - [NFT-SOLANA](/nft-sol/)
+- [SOLANA-PAT](/solana-pay/)
 
 ### 3.Awesome Gist
 
