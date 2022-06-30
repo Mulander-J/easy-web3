@@ -19,7 +19,7 @@ fcl.config({
   "discovery.wallet": "https://fcl-discovery.onflow.org/testnet/authn",
 });
 
-const TWITTER_HANDLE = "_buildspace";
+const TWITTER_HANDLE = "MulanderKilig";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 function App() {
