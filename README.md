@@ -26,7 +26,7 @@ MonoRepo for bunch of Web3 DApp starters.
 
 ### 1.Ethereum | Polygon
 
-- [HELLO-DAPP](/learn-web3/freshman/dapp.html)
+- [WEB3-Freshman](/learn-web3/freshman)
 - [DAPP-WAVE](/dapp-wave/)
 - [NFT-LOOT](/nft-loot/)
 - [NFT-GAME](/nft-game/)
