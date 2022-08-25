@@ -2,7 +2,6 @@
   "name": "whitelist-dapp-contract",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "deploy:rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby"
   },
