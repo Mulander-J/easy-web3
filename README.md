@@ -35,6 +35,7 @@ MonoRepo for bunch of Web3 DApp starters.
 - [LearnWeb3](/learn-web3/)
   - [WEB3-Freshman](/learn-web3/freshman/)
   - [WEB3-Sophomore](/learn-web3/sophomore/)
+  - [WEB3-Junior](/learn-web3/junior/)
 
 ### 2.Solana
 
