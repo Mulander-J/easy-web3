@@ -1,4 +1,4 @@
-specVersion: 0.0.4
+specVersion: 0.0.1
 schema:
   file: ./schema.graphql
 dataSources:
@@ -17,6 +17,7 @@ dataSources:
         - GameEnded
         - GameStarted
         - OwnershipTransferred
+        - PlayerJoined
       abis:
         - name: RandomWinnerGame
           file: ./abis/RandomWinnerGame.json
@@ -24,7 +25,7 @@ dataSources:
         - event: GameEnded(uint256,address,bytes32)
           handler: handleGameEnded
         - event: PlayerJoined(uint256,address)
-          handler: handlePlayerJoined
+          handler: handlePlayerJoined       
         - event: GameStarted(uint256,uint8,uint256)
           handler: handleGameStarted
         - event: OwnershipTransferred(indexed address,indexed address)
