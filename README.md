@@ -50,6 +50,10 @@ MonoRepo for bunch of Web3 DApp starters.
 
 - [CRYPTO COVEN](/awesome.gist/CryptoCoven.sol) | **Elegant** & **Gas Saving** `Solidy` Code | `NFT721` |
 
+### 5.AI
+
+- [GPT-3](/ai/gpt3-try/)
+
 ## Related
 
 Here are some related projects
