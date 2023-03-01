@@ -1,6 +1,6 @@
 # WEB3 Starter
 
-MonoRepo for bunch of Web3 DApp starters.
+MonoRepo for bunch of Web3 DApp bolierplates.
 
 ## Tech Stack
 
