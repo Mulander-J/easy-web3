@@ -1,0 +1,44 @@
+type UserInfo = record {name: text;};
+type Time = int;
+type Result = 
+ variant {
+   err: text;
+   ok: bool;
+ };
+type MessageWithAuthor = 
+ record {
+   author: Author;
+   "text": text;
+   time: Time;
+ };
+type Message = 
+ record {
+   "text": text;
+   time: Time;
+ };
+type List = 
+ opt record {
+       principal;
+       List;
+     };
+type Author = 
+ record {
+   id: principal;
+   user: UserInfo;
+ };
+service : {
+  authorMatch: (List) -> (vec Author);
+  emptyData: () -> (int);
+  follow: (principal) -> (Result);
+  followBy: (principal) -> (Result);
+  followBys: () -> (vec Author);
+  follows: () -> (vec Author);
+  getRemoteName: (principal) -> (text);
+  getRemotePosts: (principal, Time) -> (vec Message);
+  getRemotePostsWithAuthor: (principal, Time) -> (vec MessageWithAuthor);
+  get_name: () -> (text) query;
+  post: (text, text) -> (Result);
+  posts: (Time) -> (vec MessageWithAuthor) query;
+  setUser: (UserInfo) -> (UserInfo);
+  timeline: (Time) -> (vec MessageWithAuthor);
+}

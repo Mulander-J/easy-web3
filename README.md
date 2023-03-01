@@ -28,18 +28,22 @@ MonoRepo for bunch of Web3 DApp starters.
 - [NFT-SOLANA](/nft-sol/)
 - [SOLANA-PAY](/solana-pay/)
 
-## 3.Flow
+### 3.Flow
 
 - [NFT-Flow](/nft-flow/)
 
-### 4.AI
+### 4.Dfinity
+
+- [IC-Motoko](/ic-motoko/)
+
+### 5.AI
 
 - [GPT-3](/ai/gpt3-try/)
 - [Avatar](/ai/avatar/)
 
-### 5.Awesome Gist
+## Awesome Gist
 
-- [CRYPTO COVEN](/awesome.gist/CryptoCoven.sol) | **Elegant** & **Gas Saving** `Solidy` Code | `NFT721` |
+- [CRYPTO COVEN](/awesome.gist/CryptoCoven.sol) | **Elegant** & **Gas Saving** `Solidy` Code | `NFT721`
 
 ## Related
 

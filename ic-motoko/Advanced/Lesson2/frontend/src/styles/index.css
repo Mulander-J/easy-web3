@@ -1,0 +1,233 @@
+@import "./font.css";
+@import "./tailwind.css";
+/* global */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* fonts */
+.font-grouns{
+    font-family: Grouns, sans-serif;
+}
+.app-title1{
+    font-family: Grouns, sans-serif;
+    @apply font-semibold text-2xl my-4;
+}
+/* app-layout */
+.App{
+    height: 100vh;
+    overflow: hidden;
+}
+.app-brand{
+    @apply inline-flex items-center cursor-pointer;
+}
+.app-connect{
+    @apply px-4 inline-flex items-center;
+}
+.app-footer{
+    @apply text-center p-2;
+}
+.auth-section {
+    @apply flex justify-end text-right p-4;
+}
+.app-btn {
+    @apply bg-purple-500 hover:bg-purple-600 leading-5 text-center w-40 mx-auto my-4 px-5 py-2 text-sm rounded-full font-semibold text-white cursor-pointer select-none;
+}
+.app-IconBtn{
+    @apply mx-2 cursor-pointer select-none;
+}
+.borkenTxt{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 4px;
+    color: white;
+    position: relative;
+    animation: uk-text-shadow-glitch .65s cubic-bezier(1,-1.91,0,2.79) 0s infinite normal both running;
+    animation-play-state: paused;
+}
+.borkenTxt:hover{
+    animation-play-state: running;
+}
+@keyframes uk-text-shadow-glitch {
+    0% {
+        text-shadow: none
+    }
+    25% {
+        text-shadow: -2px -2px 0 #ff004f,2px 2px 0 #00f7ef
+    }
+    50% {
+        text-shadow: 2px -2px 0 #ff004f,-2px 2px 0 #00f7ef
+    }
+    75% {
+        text-shadow: -2px 2px 0 #ff004f,2px -2px 0 #00f7ef
+    }
+    100% {
+        text-shadow: 2px 2px 0 #ff004f,-2px -2px 0 #00f7ef
+    }
+}
+.app-home {
+    @apply grid text-center justify-center items-center h-full w-full relative;
+}
+.app-vMask{
+    @apply absolute top-0 left-0 h-full w-full object-cover;
+    z-index: -1;
+    filter: blur(0);
+}
+.app-home section p{
+    padding: 16px;
+    border-radius: 15px;
+    background: rgba(34,34,34,.8);
+    opacity: 0;
+    transition: all .22s ease-in-out;
+}
+.app-home .app-btn:hover +section p{
+    opacity: 1;
+}
+.app-home .app-btn:hover +section .app-vMask{
+    filter: blur(10px);
+}
+/*  page-layout */
+.page-wrapper {
+    @apply p-4;
+}
+.page-center{
+    @apply flex flex-col items-center;
+}
+/* transtion-fade */
+.fade-enter {
+    opacity: 0;
+    transform: translate(0, 25px);
+    z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transform: translate(0, 0);
+
+    transition: opacity 250ms ease-out, transform 300ms ease;
+}
+.fade-exit {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transform: translate(0, 30px);
+
+    transition: opacity 250ms ease-out, transform 300ms ease;
+}
+
+/* proposeItem */
+.p-settled,
+.p-item{
+    @apply relative rounded-lg py-4 px-6;
+    transition: all .28s ease-in-out;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.p-settled:hover,
+.p-item:hover {
+    transform: scale(1.1);
+}
+.p-settled::after{
+    position: absolute;
+    top: 0.3rem;
+    left: -0.5rem;
+    z-index: 1;
+    padding-right: 0.625rem;
+    font-weight: bold;
+    line-height: 0px;
+    color: #000;
+    height: 0px;
+    border: 1rem solid #ee7600;
+    border-right-color: transparent;
+    content: "Closed";
+    box-shadow: 0px 0.3125rem 0.3125rem -0.3125rem #000;
+}
+.p-settled::before{
+    content: "";
+    position: absolute;
+    top: 2.1875rem;
+    left: -0.5rem;
+    border: 0.25rem solid #89540c;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+/* page propose */
+.page-propose{
+    position: relative;
+    perspective-origin: center;
+    perspective: 100px;
+    overflow: hidden;
+    height: 100%;
+}
+.propose-cover{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: blueviolet;
+    background-image: url(https://w.wallhaven.cc/full/xl/wallhaven-xlyg9o.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-blend-mode: multiply;
+    animation: rush ease-in-out 10s;
+    transform-style: preserve-3d;
+    transition: all .28s ease-in-out;
+}
+@keyframes rush {
+    0%,100%{
+        background-blend-mode: multiply;
+        transform: translateZ(0);
+    }
+    2%{
+        background-blend-mode: luminosity;
+        background-color: paleturquoise;
+    }
+    4%{
+        background-blend-mode: hard-light;
+        background-color: rebeccapurple;
+        transform: translateZ(20px);
+    }
+    6%{
+        background-blend-mode: luminosity;
+        background-color: paleturquoise;
+    }
+    8%{
+        background-blend-mode: multiply;
+        background-color: rebeccapurple;
+        transform: translateZ(0);
+    }
+}
+.propose-createImg{
+    margin-top: 1rem;
+    height: 20em;
+    width: 24em;
+    background-color: rgba(255,255,255,.8);    
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-size: cover;    
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    box-shadow: inset 0px 0 20px 5px rgb(255 255 255 / 68%);
+    filter: hue-rotate(0);
+    transition: all .3s ease-in-out;
+    animation: hueFlash infinite 2.4s ease-in-out;
+}
+@keyframes hueFlash {
+    0%,100%{
+        filter: hue-rotate(0);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
