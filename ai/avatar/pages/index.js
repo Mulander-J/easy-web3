@@ -5,6 +5,7 @@ import buildspaceLogo from '../assets/buildspace-logo.png';
 
 const Home = () => {
   const maxRetries = 20;
+  const resoltion = 512;
 
   const [input, setInput] = useState('');
   const [img, setImg] = useState('');
@@ -36,7 +37,7 @@ const Home = () => {
       setRetry(0);
     }
 
-    const finalInput = input.replace(/land/gi, 'mulander');
+    const finalInput = input.replace(/bunny/gi, 'babybunny');
 
     const response = await fetch('/api/generate', {
       method: 'POST',
@@ -104,10 +105,10 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Maigc Show</h1>
+            <h1>Ask Bunny</h1>
           </div>
           <div className="header-subtitle">
-            <h2>turn me into anyone as you want. Make sure refer to me as 'mulander' in the prompt</h2>
+            <h2>turn me into anyone as you want. Make sure refer to me as 'bunny' in the prompt</h2>
           </div>
           <div className="prompt-container">
             <input className="prompt-box"  value={input} onChange={onChange} />
@@ -126,7 +127,7 @@ const Home = () => {
         </div>
         {img && (
           <div className="output-content">
-            <Image src={img} width={512} height={512} alt={input} />
+            <Image src={img} width={resoltion} height={resoltion} alt={input} />
             <p>{finalPrompt}</p>
           </div>
         )}
