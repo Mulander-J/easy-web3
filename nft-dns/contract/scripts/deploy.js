@@ -7,6 +7,16 @@ const main = async () => {
 
   console.log("Contract deployed to:", domainContract.address);
 
+  // console.log("Sleeping.....");
+  // // Wait for etherscan to notice that the contract has been deployed
+  // await sleep(30000);
+
+  // // Verify the contract after deploying
+  // await hre.run("verify:verify",  {
+  //   address: domainContract.address,
+  //   constructorArguments: [tld],
+  // });
+
   let txn;
 
   const tryTx = async (title, cmd, ...args) => {
@@ -40,6 +50,11 @@ const main = async () => {
   const balance = await hre.ethers.provider.getBalance(domainContract.address);
   console.log("Contract balance:", hre.ethers.utils.formatEther(balance));
 };
+
+
+// function sleep(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.

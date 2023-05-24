@@ -78,9 +78,9 @@ contract Domains is ERC721URIStorage {
     console.log("Registering %s.%s on the contract with tokenID %d", name, tld, newRecordId);
 
     uint256 length = StringUtils.strlen(name);
-		string memory strLen = Strings.toString(length);
+    string memory strLen = Strings.toString(length);
 
-		// Create the JSON metadata of our NFT. We do this by combining strings and encoding as base64
+    // Create the JSON metadata of our NFT. We do this by combining strings and encoding as base64
     string memory json = Base64.encode(
       bytes(
         string(
