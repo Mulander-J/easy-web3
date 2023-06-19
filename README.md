@@ -12,6 +12,7 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ### 1.Ethereum | Polygon
 
+- [NFT-Art-Generator](/nft-art-generator/)
 - [DAPP-WAVE](/dapp-wave/)
 - [NFT-LOOT](/nft-loot/)
 - [NFT-GAME](/nft-game/)
