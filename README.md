@@ -23,6 +23,7 @@ MonoRepo for bunch of Web3 DApp bolierplates.
   - [WEB3-Freshman](/learn-web3/freshman/)
   - [WEB3-Sophomore](/learn-web3/sophomore/)
   - [WEB3-Junior](/learn-web3/junior/)
+  - [WEB3-Senior](/learn-web3/senior/)
 
 ### 2.Solana
 
