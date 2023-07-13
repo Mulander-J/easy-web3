@@ -19,11 +19,11 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 - [NFT-DNS](/nft-dns/)
 - [DAO-THIRDWEB](/dao-thirdweb/)
 
-- [LearnWeb3](/learn-web3/)
-  - [WEB3-Freshman](/learn-web3/freshman/)
-  - [WEB3-Sophomore](/learn-web3/sophomore/)
-  - [WEB3-Junior](/learn-web3/junior/)
-  - [WEB3-Senior](/learn-web3/senior/)
+- [LearnWeb3.Ethereum-Dev-Degree](/ethereum-dev-degree/)
+  - [WEB3-Freshman](/ethereum-dev-degree/freshman/)
+  - [WEB3-Sophomore](/ethereum-dev-degree/sophomore/)
+  - [WEB3-Junior](/ethereum-dev-degree/junior/)
+  - [WEB3-Senior](/ethereum-dev-degree/senior/)
 
 ### 2.Solana
 
