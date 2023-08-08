@@ -42,6 +42,8 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 - [GPT-3](/ai/gpt3-try/)
 - [Avatar](/ai/avatar/)
+- [LearnWeb3.AI-Dev-Degree](/ai/ai-dev-degree)
+  - [AI-Freshman](/ai/ai-dev-degree/freshman/)
 
 ## Awesome Gist
 
