@@ -36,7 +36,7 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ### 4.Dfinity
 
-- [IC-Motoko](/ic-motoko/)
+- [Motoko Course](/ic-motoko/)
 
 ### 5.AI
 
