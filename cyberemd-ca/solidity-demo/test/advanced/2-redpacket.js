@@ -44,10 +44,10 @@ describe("RedPacket Demo", () => {
         const [_, user, user2, user3] = await ethers.getSigners();
         const users = [_, user, user2, user3];
         for (let i = 0; i < users.length; i++) {
-            const beforeTol = await contract.tol();
+            const beforeTol = ethers.formatEther(await contract.tol())
             const tx = await contract.connect(users[i]).take();
             await tx.wait();
-            const afterTol = await contract.tol();
+            const afterTol = ethers.formatEther(await contract.tol())
             expect(await contract.checkTaken(users[i])).to.equal(true);
             console.log("Randoms:", [beforeTol, afterTol, beforeTol - afterTol]);
         }
