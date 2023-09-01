@@ -35,8 +35,7 @@ contract bank_demo {
         require(balances[msg.sender] >= _amount, "amount is not enough");
         balances[msg.sender] -= _amount;
         tol -= _amount;
-        bool ok = payable(msg.sender).send(_amount);
-        require(ok, "send failed");
+        payable(msg.sender).transfer(_amount);
         require(tol == address(this).balance, "tol and balance not match");
     }
 

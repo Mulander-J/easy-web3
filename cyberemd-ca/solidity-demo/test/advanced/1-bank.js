@@ -31,17 +31,17 @@ describe("Bank Demo", () => {
       await tx2.wait();
       expect(await bank.balanceOf(user)).to.equal(amount + amount2);
       expect(await bank.tol()).to.equal(amount + amount2);
-      expect(await bank.balanceOf(user2)).to.equal(0);   
+      expect(await bank.balanceOf(user2)).to.equal(0);
     });
 
-    it("Revert Deposit", async ()=> {
+    it("Revert Deposit", async () => {
       const [_, user] = await ethers.getSigners();
       const userIns = bank.connect(user);
       const amount = ethers.parseEther("10");
       const amount2 = ethers.parseEther("8.2");
 
-      await expect(userIns.deposit(0, {value: amount2})).to.be.revertedWith("amount should lg than 0");
-      await expect(userIns.deposit(amount, {value: amount2})).to.be.revertedWith("amount should equal amount");
+      await expect(userIns.deposit(0, { value: amount2 })).to.be.revertedWith("amount should lg than 0");
+      await expect(userIns.deposit(amount, { value: amount2 })).to.be.revertedWith("amount should equal amount");
     })
   });
 
@@ -65,7 +65,7 @@ describe("Bank Demo", () => {
       expect(await bank.balanceOf(user)).to.equal(amount2);
       expect(await bank.tol()).to.equal(amount2);
     });
-    it("Revert Withdraw", async ()=> {
+    it("Revert Withdraw", async () => {
       const [_, user] = await ethers.getSigners();
       const userIns = bank.connect(user);
       const amount = ethers.parseEther("10");
@@ -98,7 +98,7 @@ describe("Bank Demo", () => {
       expect(await bank.balanceOf(user2)).to.equal(amount + amount2);
       expect(await bank.tol()).to.equal(amount + amount2);
     });
-    it("Revert Transfer", async ()=> {
+    it("Revert Transfer", async () => {
       const [_, user, user2] = await ethers.getSigners();
       const userIns = bank.connect(user);
       const amount = ethers.parseEther("10");
