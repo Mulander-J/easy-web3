@@ -4,46 +4,43 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ## Tech Stack
 
-**Language:** Javascript, Typescript, Solidity, Rust, Motoko
+**Language:** `JS + TS`, `Solidity`, `Rust`, `Motoko`, `Cadence`
 
-**Framework:** React, Vue, Hardhat, Anchor, DFX
+**Framework:** `React`, `Vue`, `Hardhat`, `Anchor`, `DFX`
 
 ## Catalog
 
-### 1.Ethereum | Polygon
+### 1.Ethereum / EVM Based
 
-- [NFT-Art-Generator](/nft-art-generator/)
-- [DAPP-WAVE](/dapp-wave/)
-- [NFT-LOOT](/nft-loot/)
-- [NFT-GAME](/nft-game/)
-- [NFT-DNS](/nft-dns/)
-- [DAO-THIRDWEB](/dao-thirdweb/)
-
-- [LearnWeb3.Ethereum-Dev-Degree](/ethereum-dev-degree/)
-  - [WEB3-Freshman](/ethereum-dev-degree/freshman/)
-  - [WEB3-Sophomore](/ethereum-dev-degree/sophomore/)
-  - [WEB3-Junior](/ethereum-dev-degree/junior/)
-  - [WEB3-Senior](/ethereum-dev-degree/senior/)
+- [DAPP-WAVE](/evm/dapp-wave/)
+- [NFT-LOOT](/evm/nft-loot/)
+- [NFT-GAME](/evm/nft-game/)
+- [NFT-DNS](/evm/nft-dns/)
+- [DAO-THIRDWEB](/evm/dao-thirdweb/)
+- [LearnWeb3.Ethereum-Dev-Degree](/evm/ethereum-dev-degree/) Stage 1~4 (freshman|sophomore|junior|senior)
 
 ### 2.Solana
 
-- [NFT-SOLANA](/nft-sol/)
-- [SOLANA-PAY](/solana-pay/)
+- [NFT-SOLANA](/solana/nft-sol/)
+- [SOLANA-PAY](/solana/solana-pay/)
 
 ### 3.Flow
 
-- [NFT-Flow](/nft-flow/)
+- [NFT-Flow](/flow/nft-flow/)
 
 ### 4.Dfinity
 
-- [Motoko Course](/ic-motoko/)
+- [Motoko Course](/dfinity/learnMotoko/)
 
 ### 5.AI
 
 - [GPT-3](/ai/gpt3-try/)
 - [Avatar](/ai/avatar/)
-- [LearnWeb3.AI-Dev-Degree](/ai/ai-dev-degree)
-  - [AI-Freshman](/ai/ai-dev-degree/freshman/)
+- [LearnWeb3.AI-Dev-Degree](/ai/ai-dev-degree/) Stage 1~2 (freshman|*sophomore|...|...)
+
+### 6.Tools
+
+- [NFT-Art-Generator](/tools/nft-art-generator/)
 
 ## Awesome Gist
 
@@ -74,6 +71,6 @@ Here are some related projects
 
 ## Feedback
 
-If you have any feedback, please reach out to us at mulander_j@outlook.com
+If you have any feedback, please reach out to us at [Mulander-J](mulander_j@outlook.com)
 
 ## License [MIT](/LICENSE)
