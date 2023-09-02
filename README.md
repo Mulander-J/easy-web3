@@ -10,35 +10,34 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ## Catalog
 
-### 1.Ethereum / EVM Based
+### Blockchain
 
-- [DAPP-WAVE](/evm/dapp-wave/)
-- [NFT-LOOT](/evm/nft-loot/)
-- [NFT-GAME](/evm/nft-game/)
-- [NFT-DNS](/evm/nft-dns/)
-- [DAO-THIRDWEB](/evm/dao-thirdweb/)
-- [LearnWeb3.Ethereum-Dev-Degree](/evm/ethereum-dev-degree/) Stage 1~4 (freshman|sophomore|junior|senior)
+- **Ethereum / EVM Based**
+  - [DAPP-WAVE](/evm/dapp-wave/)
+  - [NFT-LOOT](/evm/nft-loot/)
+  - [NFT-GAME](/evm/nft-game/)
+  - [NFT-DNS](/evm/nft-dns/)
+  - [DAO-THIRDWEB](/evm/dao-thirdweb/)
+  - [LearnWeb3.Ethereum-Dev-Degree](/evm/ethereum-dev-degree/) Stage 1~4 (freshman|sophomore|junior|senior)
+- **Cyberemd CA**
+  - [Fisco Bcos](/cyberemd-ca/Install-Fisco-Bcos.md)
+  - [Solidity Demo](/cyberemd-ca/solidity-demo/)
+- **Solana**
+  - [NFT-SOLANA](/solana/nft-sol/)
+  - [SOLANA-PAY](/solana/solana-pay/)
+- **Flow**
+  - [NFT-Flow](/flow/nft-flow/)
+- **Dfinity**
+  - [Motoko Course](/dfinity/learnMotoko/)
 
-### 2.Solana
+### AI
 
-- [NFT-SOLANA](/solana/nft-sol/)
-- [SOLANA-PAY](/solana/solana-pay/)
-
-### 3.Flow
-
-- [NFT-Flow](/flow/nft-flow/)
-
-### 4.Dfinity
-
-- [Motoko Course](/dfinity/learnMotoko/)
-
-### 5.AI
-
-- [GPT-3](/ai/gpt3-try/)
-- [Avatar](/ai/avatar/)
 - [LearnWeb3.AI-Dev-Degree](/ai/ai-dev-degree/) Stage 1~2 (freshman|*sophomore|...|...)
+- **GPT**
+  - [GPT-3](/ai/gpt3-try/)
+  - [Avatar](/ai/avatar/)
 
-### 6.Tools
+### Tools
 
 - [NFT-Art-Generator](/tools/nft-art-generator/)
 

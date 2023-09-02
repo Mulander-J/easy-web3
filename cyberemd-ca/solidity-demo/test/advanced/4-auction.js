@@ -39,10 +39,12 @@ describe("Auction Demo", () => {
             "auction_demo",
             [seller, endTime, ethers.parseEther(String(fixedBid)), 1],
         );
+
         const users = [user1, user2, user3];
-        let amount
+        let amount, base;
         for (let i = 0; i < users.length; i++) {
-            amount = ethers.parseEther(String(10 + fixedBid * i));
+            base = 10 + fixedBid * i;
+            amount = ethers.parseEther(String(base));
             await expect(contract.connect(users[i]).bid({ value: amount }))
                 .to.emit(contract, "Bid").withArgs(users[i].address, amount);
         }
@@ -53,8 +55,12 @@ describe("Auction Demo", () => {
             "fixed value not match"
         );
         await time.increaseTo(endTime);
-        await expect(contract.connect(_).close())
-            .to.emit(contract, "Win").withArgs(user3.address, amount);
+
+
+        await expect(contract.connect(user3).close()).to.changeEtherBalances(
+            [contract, seller],
+            [-amount, ethers.parseEther(String(base * .9))]
+        );
     })
     it("Free Bit", async () => {
         const FIVE_MINUTE_IN_SECS = 5 * 60;
@@ -64,7 +70,6 @@ describe("Auction Demo", () => {
             "auction_demo",
             [seller, endTime, 0, 0],
         );
-        const users = [user1, user2, user3];
 
         const getNewBalances = async () => ([
             await ethers.provider.getBalance(seller.address),
@@ -82,6 +87,7 @@ describe("Auction Demo", () => {
             "value should be positive"
         );
 
+        const users = [user1, user2, user3];
         let amount, base = 10;
         for (let i = 0; i < users.length; i++) {
             base += Math.random() * 20
