@@ -2,8 +2,11 @@
 pragma solidity ^0.8.0;
 
 import "./IERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 contract ERC20 is IERC20 {
+    using SafeMath for uint256;
+
     string ercName;
     string ercSymbol;
     uint8 ercDecimals;
@@ -68,8 +71,11 @@ contract ERC20 is IERC20 {
         enough(msg.sender, _value)
         returns (bool success)
     {
-        ercBalances[msg.sender] -= _value;
-        ercBalances[_to] += _value;
+        // ercBalances[msg.sender] -= _value;
+        // ercBalances[_to] += _value;
+
+        ercBalances[msg.sender] = ercBalances[msg.sender].sub(_value);
+        ercBalances[_to] = ercBalances[_to].add(_value);
 
         emit Transfer(msg.sender, _to, _value);
 
@@ -92,10 +98,17 @@ contract ERC20 is IERC20 {
             ercAllowances[_from][msg.sender] >= _value,
             "allowance not enough"
         );
+        require(_from != _to, "same fr & to");
 
-        ercBalances[_from] -= _value;
-        ercBalances[_to] += _value;
-        ercAllowances[_from][msg.sender] -= _value;
+        // ercBalances[_from] -= _value;
+        // ercBalances[_to] += _value;
+        // ercAllowances[_from][msg.sender] -= _value;
+
+        ercBalances[_from] = ercBalances[_from].sub(_value);
+        ercBalances[_to] = ercBalances[_to].add(_value);
+        ercAllowances[_from][msg.sender] = ercAllowances[_from][msg.sender].sub(
+            _value
+        );
 
         emit Transfer(_from, _to, _value);
 
@@ -108,7 +121,11 @@ contract ERC20 is IERC20 {
     ) external positiveNum(_value) validAddr(_spender) returns (bool success) {
         // require(ercBalances[msg.sender] >= _value, "user balance not enough");
 
-        ercAllowances[msg.sender][_spender] += _value;
+        // ercAllowances[msg.sender][_spender] += _value;
+
+        ercAllowances[msg.sender][_spender] = ercAllowances[msg.sender][
+            _spender
+        ].add(_value);
 
         emit Approval(msg.sender, _spender, _value);
 
@@ -122,10 +139,16 @@ contract ERC20 is IERC20 {
         remaining = ercAllowances[_owner][_spender];
     }
 
-    function mint (address _to, uint256 _value) public positiveNum(_value)  validAddr(_to) returns(bool) {
+    function mint(
+        address _to,
+        uint256 _value
+    ) public positiveNum(_value) validAddr(_to) returns (bool) {
         require(msg.sender == owner, "only admin address");
-        ercBalances[_to] += _value;
-        ercTotalSupply += _value;
+        // ercBalances[_to] += _value;
+        // ercTotalSupply += _value;
+
+        ercBalances[_to] = ercBalances[_to].add(_value);
+        ercTotalSupply = ercTotalSupply.add(_value);
 
         emit Transfer(address(0), _to, _value);
 
