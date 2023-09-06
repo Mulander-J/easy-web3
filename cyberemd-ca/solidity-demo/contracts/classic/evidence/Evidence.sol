@@ -2,11 +2,11 @@
 pragma solidity ^0.8.0;
 
 interface IEvidenceFactory {
-    function valid(address) external returns (bool);
+    function valid(address) external view returns (bool);
 
-    function getSigner(uint256) external returns (address);
+    function getSigner(uint256) external view returns (address);
 
-    function getSignersLen() external returns (uint256);
+    function getSignersLen() external view returns (uint256);
 }
 
 contract Evidence {
@@ -15,23 +15,42 @@ contract Evidence {
     address[] signed;
 
     constructor(string memory _evi) {
+        factory = msg.sender;
         require(_isValid(tx.origin), "invalid signer");
         signed.push(tx.origin);
-        factory = msg.sender;
         evidence = _evi;
     }
 
-    function _isValid(address _signer) internal returns (bool) {
+    function _isValid(address _signer) internal view returns (bool) {
         return IEvidenceFactory(factory).valid(_signer);
     }
 
-    function getEvidence () public returns (string memory, address[] memory, address[] memory) {
+    function getEvidence()
+        public view
+        returns (string memory, address[] memory, address[] memory)
+    {
         uint256 len = IEvidenceFactory(factory).getSignersLen();
         address[] memory _signers = new address[](len);
         for (uint256 i = 0; i < len; i++) {
             _signers[i] = IEvidenceFactory(factory).getSigner(i);
         }
         return (evidence, _signers, signed);
+    }
+
+    function isAllSigned() public view returns (bool) {
+        uint256 len = IEvidenceFactory(factory).getSignersLen();
+        for (uint256 i = 0; i < len; i++) {
+            if (!isSigned(IEvidenceFactory(factory).getSigner(i))) return false;
+        }
+        return true;
+    }
+    function isSigned(address _signer) internal view returns (bool) {
+        for (uint256 i = 0; i < signed.length; i++) {
+            if (signed[i] == _signer) {
+                return true;
+            }
+        }
+        return false;
     }
 
     function sign() public returns (bool) {
@@ -41,21 +60,6 @@ contract Evidence {
         }
         signed.push(tx.origin);
 
-        return true;
-    }
-
-    function isSigned(address _signer) public view returns (bool) {
-        for (uint256 i = 0; i < signed.length; i++) {
-            if (signed[i] == _signer) return true;
-        }
-        return false;
-    }
-
-    function isAllSigned() public returns (bool) {
-        uint256 len = IEvidenceFactory(factory).getSignersLen();
-        for (uint256 i = 0; i < len; i++) {
-            if (!isSigned(IEvidenceFactory(factory).getSigner(i))) return false;
-        }
         return true;
     }
 }
