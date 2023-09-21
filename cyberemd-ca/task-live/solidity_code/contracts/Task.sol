@@ -54,7 +54,7 @@ contract Task {
         require(_bonus > 0, "bonus should > 0");
         require(_bonus <= IERC20(token).balanceOf(msg.sender), "balance not enough");
 
-        TaskData memory task = TaskData(
+        TaskData memory theTask = TaskData(
             msg.sender,
             address(0),
             _intro,
@@ -63,32 +63,32 @@ contract Task {
             block.timestamp,
             TaskStatus.Initial
         );
-        tasks.push(task);
+        tasks.push(theTask);
         uint256 index = tasks.length - 1;
         emit NewTask(msg.sender, index, _intro, _bonus);
         return index;
     }
 
     function take(uint256 _index) public exists(_index) {
-        TaskData storage task = tasks[_index];
+        TaskData storage theTask = tasks[_index];
 
-        require(task.issuer != msg.sender, "issuer can't taken");
-        require(task.taker == address(0), "task is taken");
-        require(task.status == TaskStatus.Initial, "invalid task status");
+        require(theTask.issuer != msg.sender, "issuer can't taken");
+        require(theTask.taker == address(0), "task is taken");
+        require(theTask.status == TaskStatus.Initial, "invalid task status");
 
-        task.taker = msg.sender;
-        task.status = TaskStatus.Taken;
-        emit TaskUpdate(msg.sender, _index, task.status);
+        theTask.taker = msg.sender;
+        theTask.status = TaskStatus.Taken;
+        emit TaskUpdate(msg.sender, _index, theTask.status);
     }
 
     function commit(uint256 _index) public exists(_index) {
-        TaskData storage task = tasks[_index];
+        TaskData storage theTask = tasks[_index];
 
-        require(task.taker == msg.sender, "invalid taker");
-        require(task.status == TaskStatus.Taken, "invalid task status");
+        require(theTask.taker == msg.sender, "invalid taker");
+        require(theTask.status == TaskStatus.Taken, "invalid task status");
 
-        task.status = TaskStatus.Finished;
-        emit TaskUpdate(msg.sender, _index, task.status);
+        theTask.status = TaskStatus.Finished;
+        emit TaskUpdate(msg.sender, _index, theTask.status);
     }
 
     function settled(
@@ -96,19 +96,19 @@ contract Task {
         string memory _comment,
         bool _passed
     ) public exists(_index) {
-        TaskData storage task = tasks[_index];
+        TaskData storage theTask = tasks[_index];
 
-        require(task.issuer == msg.sender, "invalid issuer");
-        require(task.status == TaskStatus.Finished, "invalid task status");
+        require(theTask.issuer == msg.sender, "invalid issuer");
+        require(theTask.status == TaskStatus.Finished, "invalid task status");
 
-        task.comment = _comment;
+        theTask.comment = _comment;
         if (_passed) {
-            task.status = TaskStatus.Success;
-            IERC20(token).transferFrom(task.issuer, task.taker, task.bonus);
+            theTask.status = TaskStatus.Success;
+            IERC20(token).transferFrom(theTask.issuer, theTask.taker, theTask.bonus);
         } else {
-            task.status = TaskStatus.Initial;
+            theTask.status = TaskStatus.Initial;
         }
-        emit TaskUpdate(msg.sender, _index, task.status);
+        emit TaskUpdate(msg.sender, _index, theTask.status);
     }
 
     function register(address _to) public {
