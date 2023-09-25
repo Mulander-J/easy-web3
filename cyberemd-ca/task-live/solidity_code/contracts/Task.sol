@@ -114,6 +114,7 @@ contract Task {
     function register(address _to) public {
         require(_to != address(0), "invalid address");
         require(!facuets[msg.sender], "already registered");
+        require(IERC20(token).balanceOf(address(this)) >= FAUCET_INIT, "balance not enough");
         facuets[msg.sender] = true;
         IERC20(token).transfer(_to, FAUCET_INIT);
     }
