@@ -1,0 +1,157 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="296pt" height="624pt" viewBox="0.00 0.00 296.43 624">
+<g id="graph0" class="graph" transform="translate(50.92498709513012,526.5720606641542) scale(0.7578582832551991)" data-name="G">
+
+<polygon fill="#2e3e56" stroke="none" points="-4,4 -4,-620 292.43,-620 292.43,4 -4,4"/>
+<g id="clust1" class="cluster" data-name="clusterTask">
+
+<path fill="#445773" stroke="#445773" d="M20,-8C20,-8 268.43,-8 268.43,-8 274.43,-8 280.43,-14 280.43,-20 280.43,-20 280.43,-459 280.43,-459 280.43,-465 274.43,-471 268.43,-471 268.43,-471 20,-471 20,-471 14,-471 8,-465 8,-459 8,-459 8,-20 8,-20 8,-14 14,-8 20,-8" style=""/>
+<text text-anchor="middle" x="144.22" y="-454.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Task</text>
+</g>
+<g id="clust2" class="cluster" data-name="cluster_01">
+
+<polygon fill="#2e3e56" stroke="black" points="10.53,-479 10.53,-608 264.74,-608 264.74,-479 10.53,-479" style=""/>
+<text text-anchor="middle" x="137.63" y="-591.4" font-family="Times,serif" font-size="14.00" style="">Legend</text>
+</g>
+<!-- Task.exists -->
+<g id="node1" class="node" pointer-events="visible" data-name="Task.exists">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="119.06,-408.54 119.06,-423.46 98.25,-434 68.81,-434 47.99,-423.46 47.99,-408.54 68.81,-398 98.25,-398 119.06,-408.54"/>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="123.04,-406.08 123.04,-425.92 99.19,-438 67.86,-438 44.01,-425.92 44.01,-406.08 67.86,-394 99.19,-394 123.04,-406.08"/>
+<text text-anchor="middle" x="83.53" y="-411.8" font-family="Times,serif" font-size="14.00">exists</text>
+</g>
+<!-- Task.&lt;Constructor&gt; -->
+<g id="node2" class="node" pointer-events="visible" data-name="Task.&lt;Constructor&gt;">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-358" rx="67.55" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-353.8" font-family="Times,serif" font-size="14.00">&lt;Constructor&gt;</text>
+</g>
+<!-- Task.issue -->
+<g id="node3" class="node" pointer-events="visible" data-name="Task.issue">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-250" rx="30.2" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-245.8" font-family="Times,serif" font-size="14.00">issue</text>
+</g>
+<!-- Task.IERC20 -->
+<g id="node9" class="node" pointer-events="visible" data-name="Task.IERC20">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="229.74" cy="-142" rx="42.88" ry="18"/>
+<text text-anchor="middle" x="229.74" y="-137.8" font-family="Times,serif" font-size="14.00">IERC20</text>
+</g>
+<!-- Task.issue&#45;&gt;Task.IERC20 -->
+<g id="edge1" class="edge" data-name="Task.issue-&gt;Task.IERC20">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M112.04,-241.77C124.56,-237.31 139.19,-231.05 151.05,-223 172.42,-208.51 192.48,-187.32 206.86,-170.25"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="209.51,-172.55 213.13,-162.59 204.09,-168.11 209.51,-172.55"/>
+</g>
+<!-- Task.address -->
+<g id="node10" class="node" pointer-events="visible" data-name="Task.address">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="229.74" cy="-223" rx="40" ry="18"/>
+<text text-anchor="middle" x="229.74" y="-218.8" font-family="Times,serif" font-size="14.00">address</text>
+</g>
+<!-- Task.issue&#45;&gt;Task.address -->
+<g id="edge2" class="edge" data-name="Task.issue-&gt;Task.address">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M113.71,-244.54C132.27,-241.06 156.79,-236.47 178.42,-232.42"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="178.94,-235.88 188.13,-230.6 177.65,-229 178.94,-235.88"/>
+</g>
+<!-- Task.take -->
+<g id="node4" class="node" pointer-events="visible" data-name="Task.take">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-304" rx="27.24" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-299.8" font-family="Times,serif" font-size="14.00">take</text>
+</g>
+<!-- Task.take&#45;&gt;Task.address -->
+<g id="edge3" class="edge" data-name="Task.take-&gt;Task.address">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M109.14,-295.51C121.95,-290.72 137.68,-284.24 151.05,-277 167.01,-268.36 183.66,-257.12 197.43,-247.13"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="199.41,-250.03 205.36,-241.27 195.24,-244.4 199.41,-250.03"/>
+</g>
+<!-- Task.commit -->
+<g id="node5" class="node" pointer-events="visible" data-name="Task.commit">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-196" rx="40.58" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-191.8" font-family="Times,serif" font-size="14.00">commit</text>
+</g>
+<!-- Task.settled -->
+<g id="node6" class="node" pointer-events="visible" data-name="Task.settled">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-88" rx="36.49" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-83.8" font-family="Times,serif" font-size="14.00">settled</text>
+</g>
+<!-- Task.settled&#45;&gt;Task.IERC20 -->
+<g id="edge4" class="edge" data-name="Task.settled-&gt;Task.IERC20">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M114.41,-99.19C134.39,-106.67 161.04,-116.65 183.59,-125.09"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="182.2,-128.31 192.79,-128.54 184.65,-121.75 182.2,-128.31"/>
+</g>
+<!-- Task.register -->
+<g id="node7" class="node" pointer-events="visible" data-name="Task.register">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-142" rx="39.99" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-137.8" font-family="Times,serif" font-size="14.00">register</text>
+</g>
+<!-- Task.register&#45;&gt;Task.IERC20 -->
+<g id="edge6" class="edge" data-name="Task.register-&gt;Task.IERC20">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M122.79,-135.96C138.75,-135.24 157.57,-135.07 174.89,-135.45"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="174.64,-138.94 184.74,-135.75 174.85,-131.94 174.64,-138.94"/>
+</g>
+<!-- Task.register&#45;&gt;Task.IERC20 -->
+<g id="edge8" class="edge" data-name="Task.register-&gt;Task.IERC20">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M122.79,-148.04C138.75,-148.76 157.57,-148.93 174.89,-148.55"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="174.85,-152.06 184.74,-148.25 174.64,-145.06 174.85,-152.06"/>
+</g>
+<!-- Task.register&#45;&gt;Task.address -->
+<g id="edge5" class="edge" data-name="Task.register-&gt;Task.address">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M123.19,-147.28C132.5,-150.83 142.28,-155.25 151.05,-160 170.06,-170.3 190.06,-184.28 205.01,-196.66"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="202.35,-198.99 212.19,-202.92 206.95,-193.71 202.35,-198.99"/>
+</g>
+<!-- Task.register&#45;&gt;Task.address -->
+<g id="edge7" class="edge" data-name="Task.register-&gt;Task.address">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M107.58,-157.82C120.65,-163.76 137.13,-170.46 151.05,-178 164.21,-185.13 177.84,-194.02 189.95,-202.12"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="187.81,-204.9 198.06,-207.57 191.71,-199.09 187.81,-204.9"/>
+</g>
+<!-- Task.task -->
+<g id="node8" class="node" pointer-events="visible" data-name="Task.task">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="83.53" cy="-34" rx="27" ry="18"/>
+<text text-anchor="middle" x="83.53" y="-29.8" font-family="Times,serif" font-size="14.00">task</text>
+</g>
+<!-- key -->
+<g id="node11" class="node" pointer-events="visible" data-name="key">
+
+<polygon fill="#edad56" stroke="none" stroke-width="3" points="148.53,-575 18.53,-575 18.53,-487 148.53,-487 148.53,-575"/>
+<text text-anchor="start" x="68.16" y="-556.4" font-family="Times,serif" font-size="14.00">Internal Call</text>
+<text text-anchor="start" x="64.27" y="-536.4" font-family="Times,serif" font-size="14.00">External Call</text>
+<text text-anchor="start" x="41.73" y="-516.4" font-family="Times,serif" font-size="14.00">Defined Contract</text>
+<text text-anchor="start" x="28.13" y="-496.4" font-family="Times,serif" font-size="14.00">Undefined Contract</text>
+</g>
+<!-- key2 -->
+<g id="node12" class="node" pointer-events="visible" data-name="key2">
+
+<polygon fill="#edad56" stroke="none" stroke-width="3" points="256.74,-575 202.74,-575 202.74,-487 256.74,-487 256.74,-575"/>
+<text text-anchor="start" x="219.74" y="-556.4" font-family="Times,serif" font-size="14.00">   </text>
+<text text-anchor="start" x="219.74" y="-536.4" font-family="Times,serif" font-size="14.00">   </text>
+<polygon fill="#445773" stroke="none" points="217.74,-511 217.74,-531 242.74,-531 242.74,-511 217.74,-511"/>
+<text text-anchor="start" x="219.74" y="-516.4" font-family="Times,serif" font-size="14.00">   </text>
+<polygon fill="none" stroke="#e8726d" points="219.74,-493 219.74,-509 240.74,-509 240.74,-493 219.74,-493"/>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge9" class="edge" data-name="key-&gt;key2">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M141.53,-561C170.25,-561 180.47,-561 203.99,-561"/>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="203.72,-564.5 213.71,-561 203.71,-557.5 203.72,-564.5"/>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge10" class="edge" data-name="key-&gt;key2">
+
+<path fill="none" stroke="white" stroke-width="2" d="M141.53,-541C170.25,-541 180.47,-541 203.99,-541"/>
+<polygon fill="white" stroke="white" stroke-width="2" points="203.72,-544.5 213.71,-541 203.71,-537.5 203.72,-544.5"/>
+</g>
+</g>
+</svg>
