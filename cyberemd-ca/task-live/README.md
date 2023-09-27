@@ -55,7 +55,7 @@ func main() {
 ```
 
 ```bash
-go mod init {moudle-name}
+go mod init <module_name> 
 go mod tidy
 go get github.com/gin-gonic/gin
 go run main.go
