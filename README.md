@@ -20,8 +20,9 @@ MonoRepo for bunch of Web3 DApp bolierplates.
   - [DAO-THIRDWEB](/evm/dao-thirdweb/)
   - [LearnWeb3.Ethereum-Dev-Degree](/evm/ethereum-dev-degree/) Stage 1~4 (freshman|sophomore|junior|senior)
 - **Cyberemd CA**
-  - [Fisco Bcos](/cyberemd-ca/Install-Fisco-Bcos.md)
+  - [Setup ETH ENV](/cyberemd-ca/installETH.md)
   - [Solidity Demo](/cyberemd-ca/solidity-demo/)
+  - [Task Live](/cyberemd-ca/task-live/)
 - **Solana**
   - [NFT-SOLANA](/solana/nft-sol/)
   - [SOLANA-PAY](/solana/solana-pay/)
