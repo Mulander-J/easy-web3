@@ -1,4 +1,4 @@
-package routers
+package routes
 
 import (
 	"net/http"
@@ -12,11 +12,6 @@ func pong(c *gin.Context) {
 	})
 }
 
-func SetupRouter() *gin.Engine {
-	r := gin.Default()
-
-	/// PING
-	r.GET("/ping", pong)
-
-	return r
+func LoadCommon(e *gin.Engine) {
+	e.GET("/ping", pong)
 }
