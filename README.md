@@ -33,7 +33,7 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ### AI
 
-- [LearnWeb3.AI-Dev-Degree](/ai/ai-dev-degree/) Stage 1~2 (freshman|*sophomore|...|...)
+- [LearnWeb3.AI-Dev-Degree](/ai/ai-dev-degree/) Stage 1~2 (freshman|sophomore|...|...)
 - **GPT**
   - [GPT-3](/ai/gpt3-try/)
   - [Avatar](/ai/avatar/)
