@@ -50,16 +50,20 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ## Related
 
-[![Ethtreum](https://img.shields.io/badge/network-ethereum-3498db.svg?)](https://ethereum.org/)
-[![Polygon](https://img.shields.io/badge/network-polygon-7B3FE4.svg?)](https://polygon.technology/)
-[![solana](https://img.shields.io/badge/network-solana-14f195.svg?)](https://solana.com)
-[![flow](https://img.shields.io/badge/network-flow-00ef8b.svg?)](https://www.onflow.org/)
+[![Ethtreum](https://img.shields.io/badge/L1-ethereum-3498db.svg?)](https://ethereum.org/)
+[![solana](https://img.shields.io/badge/L1-solana-8b4ff6.svg?)](https://solana.com)
+[![dfinity](https://img.shields.io/badge/L1-dfinity-f15a24.svg?)](https://dfinity.org/)
 
-[![buildspace](https://img.shields.io/badge/platform-buildspace-9d8eee.svg?)](https://buildspace.so)
-[![LearnWeb3](https://img.shields.io/badge/platform-LearnWeb3-8291fe.svg?)](https://learnweb3.io)
-[![TinTinLand](https://img.shields.io/badge/platform-TinTinLand-d23d60.svg?)](https://tintinland.com/en)
+[![Polygon](https://img.shields.io/badge/L2-polygon-7B3FE4.svg?)](https://polygon.technology/)
+[![starknet](https://img.shields.io/badge/L2-starknet-0c0c4f.svg?)](https://www.starknet.io/)
 
-[![thirdweb](https://img.shields.io/badge/util-thirdweb-A855F7.svg?)](https://thirdweb.com/)
+[![flow](https://img.shields.io/badge/NFT-flow-00ef8b.svg?)](https://www.onflow.org/)
+
+[![buildspace](https://img.shields.io/badge/Idea-buildspace-9d8eee.svg?)](https://buildspace.so)
+[![LearnWeb3](https://img.shields.io/badge/Edu-LearnWeb3-8291fe.svg?)](https://learnweb3.io)
+[![TinTinLand](https://img.shields.io/badge/Community-TinTinLand-d23d60.svg?)](https://tintinland.com/en)
+
+[![thirdweb](https://img.shields.io/badge/PAAS-thirdweb-A855F7.svg?)](https://thirdweb.com/)
 
 Here are some related projects
 
