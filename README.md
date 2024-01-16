@@ -4,9 +4,9 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 ## Tech Stack
 
-**Language:** `JS + TS`, `Solidity`, `Rust`, `Motoko`, `Cadence`
+**Language:** `JS + TS`, `Solidity`, `Rust`, `Motoko`, `Cadence`, `Cairo`
 
-**Framework:** `React`, `Vue`, `Hardhat`, `Anchor`, `DFX`
+**Framework:** `React`, `Vue`, `Hardhat`, `Anchor`, `DFX`, `Scarb`
 
 ## Catalog
 
@@ -29,7 +29,9 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 - **Flow**
   - [NFT-Flow](/flow/nft-flow/)
 - **Dfinity**
-  - [Motoko Course](/dfinity/learnMotoko/)
+  - [TinTin Boot Camp](/dfinity/learnMotoko/)
+- **Staknet**
+  - [TinTin Boot Camp](/starknet/tintin_dev_boot_camp/)
 
 ### AI
 
@@ -55,6 +57,7 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 [![buildspace](https://img.shields.io/badge/platform-buildspace-9d8eee.svg?)](https://buildspace.so)
 [![LearnWeb3](https://img.shields.io/badge/platform-LearnWeb3-8291fe.svg?)](https://learnweb3.io)
+[![TinTinLand](https://img.shields.io/badge/platform-TinTinLand-d23d60.svg?)](https://tintinland.com/en)
 
 [![thirdweb](https://img.shields.io/badge/util-thirdweb-A855F7.svg?)](https://thirdweb.com/)
 
