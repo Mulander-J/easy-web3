@@ -12,10 +12,10 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 
 Lang for blockchain
 
-[![solidity](https://img.shields.io/badge/evm-solidity-2b247c.svg?)](https://soliditylang.org/)
-[![motoko](https://img.shields.io/badge/dfinity-motoko-3b00b9.svg?)](https://internetcomputer.org/docs/current/motoko/main/motoko)
-[![cairo](https://img.shields.io/badge/starknet-cairo1-0c0c4f.svg?)](https://book.cairo-lang.org/)
-[![cadence](https://img.shields.io/badge/flow-cadence-00c271.svg?)](https://cadence-lang.org/docs/)
+[![solidity](https://img.shields.io/github/v/release/ethereum/solidity?logo=github&label=solidity&color=2b247c)](https://soliditylang.org/)
+[![solidity](https://img.shields.io/github/v/release/dfinity/motoko?logo=github&label=motoko&color=3b00b9)](https://internetcomputer.org/docs/current/motoko/main/motoko)
+[![cairo](https://img.shields.io/github/v/release/starkware-libs/cairo?logo=github&label=cairo&color=0c0c4f)](https://book.cairo-lang.org/)
+[![cadence](https://img.shields.io/github/v/release/onflow/cadence?logo=github&label=cadence&color=00c271)](https://cadence-lang.org/docs/)
 
 **Frameworks:** 
 
@@ -70,7 +70,7 @@ Lang for blockchain
 ## Resources
 
 [![Ethtreum](https://img.shields.io/badge/L1-ethereum-2b247c.svg?)](https://ethereum.org/)
-[![solana](https://img.shields.io/badge/L1-solana-8b4ff6.svg?)](https://solana.com)
+[![solana](https://img.shields.io/badge/L1-solana-29e9a3.svg?)](https://solana.com)
 [![dfinity](https://img.shields.io/badge/L1-dfinity-3b00b9.svg?)](https://dfinity.org/)
 
 [![Polygon](https://img.shields.io/badge/L2-polygon-7B3FE4.svg?)](https://polygon.technology/)
