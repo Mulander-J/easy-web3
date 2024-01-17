@@ -20,7 +20,7 @@ trait RectangleTrait<T> {
 // }
 impl RectangleImpl<T, +Mul<T>, +Copy<T>> of RectangleTrait<T> {
     fn area(self: @Rectangle<T>) -> T {
-        *self.width * * self.height
+        *self.width * *self.height
     }
 }
 
@@ -43,7 +43,7 @@ fn main() {
     /// string - short -> ascii
     // let x = 'Hello World';
     // println!("{}, Cairo", x);
-    
+
     /// string - format
     // let x = 25_u16;
     // println!("{}", format!("https://example.com/{}", x));
@@ -56,21 +56,21 @@ fn main() {
     println!("sum_tripe:1+3+4 = {}", sum_tripe(1, 3, 4));
 
     /// control flow
-    println!("min {}", min(3,6));
-    println!("min_tripe {}", min_tripe(3,6,2));
-    println!("fib {}", fib(3,6,3));
+    println!("min {}", min(3, 6));
+    println!("min_tripe {}", min_tripe(3, 6, 2));
+    println!("fib {}", fib(3, 6, 3));
 
     /// array
-    let mut a = array![1,3,4];
+    let mut a = array![1, 3, 4];
     // println!("sum_array {}", sum_array(a));
     // println!("len_a_2 {}", a.len()); // error: Variable was previously moved.
     println!("sum_ref {}", sum_ref(ref a));
     println!("len_a {}", return_arr_len(@a));
     println!("len_a_2 {}", return_span_len(a.span()));
     println!("len_a_3 {}", a.len());
-    
+
     /// struct
-    let rect = Rectangle { width:30_u32, height: 40, };
+    let rect = Rectangle { width: 30_u32, height: 40, };
     let _area = area(@rect);
     // println!("Rectangle is {}", rect);
     println!("Rectangle area {}", _area);
@@ -82,15 +82,15 @@ fn sum_tripe(a: u32, b: u32, c: u32) -> u32 {
     a + b + c
 }
 
-fn min(a:u32, b:u32) -> u32 {
+fn min(a: u32, b: u32) -> u32 {
     if a <= b {
         a
     } else {
         b
     }
 }
-fn min_tripe(a:u32, b:u32, c:u32) -> u32 {
-    if (a <= b) & ( a <= c) {
+fn min_tripe(a: u32, b: u32, c: u32) -> u32 {
+    if (a <= b) & (a <= c) {
         a
     } else if (b <= a) & (b <= c) {
         b
@@ -99,9 +99,9 @@ fn min_tripe(a:u32, b:u32, c:u32) -> u32 {
     }
 }
 
-fn fib(mut a: felt252, mut b: felt252, mut n: felt252) -> felt252{
+fn fib(mut a: felt252, mut b: felt252, mut n: felt252) -> felt252 {
     loop {
-        if n==0 {
+        if n == 0 {
             break a;
         }
 
@@ -116,12 +116,8 @@ fn sum_array(mut arr: Array<u32>) -> u32 {
     let mut sum = 0_u32;
     loop {
         match arr.pop_front() {
-            Option::Some(current) => {
-                sum += current;
-            },
-            Option::None => {
-                break;
-            },
+            Option::Some(current) => { sum += current; },
+            Option::None => { break; },
         }
     };
     sum
@@ -130,12 +126,8 @@ fn sum_span(mut arr: Span<u32>) -> u32 {
     let mut sum = 0_u32;
     loop {
         match arr.pop_front() {
-            Option::Some(current) => {
-                sum += *current;
-            },
-            Option::None => {
-                break;
-            },
+            Option::Some(current) => { sum += *current; },
+            Option::None => { break; },
         }
     };
     sum
@@ -144,12 +136,8 @@ fn sum_ref(ref arr: Array<u32>) -> u32 {
     let mut sum = 0_u32;
     loop {
         match arr.pop_front() {
-            Option::Some(current) => {
-                sum += current;
-            },
-            Option::None => {
-                break;
-            },
+            Option::Some(current) => { sum += current; },
+            Option::None => { break; },
         }
     };
     sum
@@ -170,6 +158,6 @@ mod tests {
     use super::sum_tripe;
     #[test]
     fn it_works() {
-        assert(sum_tripe(1,3,4) == 8, 'Sum Fail');
+        assert(sum_tripe(1, 3, 4) == 8, 'Sum Fail');
     }
 }
