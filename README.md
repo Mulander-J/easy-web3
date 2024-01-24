@@ -23,8 +23,9 @@ Lang for blockchain
 [![vue](https://img.shields.io/npm/v/vue?logo=npm&label=vue&color=42b883)](https://vuejs.org/)
 [![hardhat](https://img.shields.io/npm/v/hardhat?logo=npm&label=hardhat&color=fff100)](https://hardhat.org/)
 [![sdk](https://img.shields.io/github/v/release/dfinity/sdk?logo=github&label=dfinity-sdk)](https://github.com/dfinity/sdk)
-[![scarb](https://img.shields.io/github/v/release/software-mansion/scarb?logo=github&label=scarb)](https://github.com/software-mansion/scarb)
 [![anchor](https://img.shields.io/github/v/release/coral-xyz/anchor?logo=github&label=anchor)](https://github.com/coral-xyz/anchor)
+[![scarb](https://img.shields.io/github/v/release/software-mansion/scarb?logo=github&label=scarb)](https://github.com/software-mansion/scarb)
+[![dojo](https://img.shields.io/github/v/release/dojoengine/dojo?logo=github&label=dojo)](https://github.com/dojoengine/dojo)
 
 ## Catalog
 
