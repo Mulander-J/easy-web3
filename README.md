@@ -22,10 +22,10 @@ Lang for blockchain
 [![react](https://img.shields.io/npm/v/react?logo=npm&label=react&color=087ea4)](https://react.dev/)
 [![vue](https://img.shields.io/npm/v/vue?logo=npm&label=vue&color=42b883)](https://vuejs.org/)
 [![hardhat](https://img.shields.io/npm/v/hardhat?logo=npm&label=hardhat&color=fff100)](https://hardhat.org/)
-[![sdk](https://img.shields.io/github/v/release/dfinity/sdk?logo=github&label=dfinity-sdk)](https://github.com/dfinity/sdk)
-[![anchor](https://img.shields.io/github/v/release/coral-xyz/anchor?logo=github&label=anchor)](https://github.com/coral-xyz/anchor)
-[![scarb](https://img.shields.io/github/v/release/software-mansion/scarb?logo=github&label=scarb)](https://github.com/software-mansion/scarb)
-[![dojo](https://img.shields.io/github/v/release/dojoengine/dojo?logo=github&label=dojo)](https://github.com/dojoengine/dojo)
+[![sdk](https://img.shields.io/github/v/release/dfinity/sdk?logo=github&label=dfinity-sdk&color=3b00b9)](https://github.com/dfinity/sdk)
+[![anchor](https://img.shields.io/github/v/release/coral-xyz/anchor?logo=github&label=anchor&color=3c4fec)](https://github.com/coral-xyz/anchor)
+[![scarb](https://img.shields.io/github/v/release/software-mansion/scarb?logo=github&label=scarb&color=7485bd)](https://github.com/software-mansion/scarb)
+[![dojo](https://img.shields.io/github/v/release/dojoengine/dojo?logo=github&label=dojo&color=f53e47)](https://github.com/dojoengine/dojo)
 
 ## Catalog
 
