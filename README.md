@@ -16,6 +16,7 @@ Lang for blockchain
 [![solidity](https://img.shields.io/github/v/release/dfinity/motoko?logo=github&label=motoko&color=3b00b9)](https://internetcomputer.org/docs/current/motoko/main/motoko)
 [![cairo](https://img.shields.io/github/v/release/starkware-libs/cairo?logo=github&label=cairo&color=0c0c4f)](https://book.cairo-lang.org/)
 [![cadence](https://img.shields.io/github/v/release/onflow/cadence?logo=github&label=cadence&color=00c271)](https://cadence-lang.org/docs/)
+[![move](https://img.shields.io/badge/diem-move-102241)](https://github.com/move-language/move)
 
 **Frameworks:** 
 
@@ -51,6 +52,8 @@ Lang for blockchain
   - [TinTin Boot Camp](/dfinity/learnMotoko/)
 - **Staknet**
   - [TinTin Boot Camp](/starknet/tintin_dev_boot_camp/)
+- **Sui**
+  - [SuiStartrek](https://github.com/movefuns/SuiStartrek/tree/main/members/Mulander-J)
 
 ### AI
 
