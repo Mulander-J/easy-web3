@@ -54,6 +54,7 @@ Lang for blockchain
   - [TinTin Boot Camp](/starknet/tintin_dev_boot_camp/)
 - **Sui**
   - [SuiStartrek](https://github.com/movefuns/SuiStartrek/tree/main/members/Mulander-J)
+  - [TinTin Boot Camp](https://github.com/move-cn/letsmove/tree/main/mover/Mulander-J)
 
 ### AI
 
