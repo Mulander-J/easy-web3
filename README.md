@@ -10,7 +10,7 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 [![Typescript](https://img.shields.io/npm/v/typescript?logo=npm&label=typescript&color=3178c6)](https://www.typescriptlang.org/)
 [![rust](https://img.shields.io/github/v/release/rust-lang/rust?logo=github&label=rust&color=f74c00)](https://www.rust-lang.org/)
 
-Lang for blockchain
+**Lang for blockchain**
 
 [![solidity](https://img.shields.io/github/v/release/ethereum/solidity?logo=github&label=solidity&color=2b247c)](https://soliditylang.org/)
 [![solidity](https://img.shields.io/github/v/release/dfinity/motoko?logo=github&label=motoko&color=3b00b9)](https://internetcomputer.org/docs/current/motoko/main/motoko)
