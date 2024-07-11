@@ -53,8 +53,8 @@ MonoRepo for bunch of Web3 DApp bolierplates.
 - **Staknet**
   - [TinTin Boot Camp](/starknet/tintin_dev_boot_camp/)
 - **Sui**
-  - [SuiStartrek](https://github.com/movefuns/SuiStartrek/tree/main/members/Mulander-J)
-  - [TinTin Boot Camp](https://github.com/move-cn/letsmove/tree/main/mover/Mulander-J)
+  - [SuiStartrek](/sui/SuiStartrek/)
+  - [TinTin Boot Camp](/sui/letsmove/)
 
 ### AI
 
